@@ -1,0 +1,5 @@
+<ul>
+    {% for todo in todo_list %}
+        <li><a href="{% url 'detail' todo.id %}">{{ todo }}</a></li>
+    {% endfor %}
+</ul>

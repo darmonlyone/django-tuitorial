@@ -1,0 +1,5 @@
+<form method="post" action="{% url 'add_todo' %}">
+    {% csrf_token %}
+    <input name="todo_name" type="text">
+    <input type="submit">
+</form>

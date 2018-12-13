@@ -1,0 +1,5 @@
+<h1>{{ todo_detail }}</h1>
+ <form method="post" action="{% url 'set_done' todo_detail.id %}">
+     {% csrf_token %}
+     <input type="submit" value="Done">
+ </form>
